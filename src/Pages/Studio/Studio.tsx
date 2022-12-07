@@ -2,7 +2,6 @@ import { TextField, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 import CustomizedButton from "../../Components/CustomButton/CustomButton";
 import axios from 'axios';
-import Cookies from 'js-cookie';
 
 
 const Studio = () => {
@@ -12,11 +11,7 @@ const Studio = () => {
     const [imageUrl, setImageUrl] = useState('');
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-
-       console.log(Cookies)
-    }, [])
-
+ 
     const handleGenerateClick = async () => {
         setLoading(true);
         let payload = {
