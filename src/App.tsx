@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Freeform from './Pages/FreeForm/FreeForm';
 import Character from './Pages/Character/Character';
+import Studio from './Pages/Studio/Studio';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/create_freeform'  element={<Freeform/>} />
         <Route path='/create_character' element={<Character/>} />
+        <Route path='/studio' element={<Studio/>} />
       </Routes>
     </div>
   );

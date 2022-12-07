@@ -16,6 +16,9 @@ const Home = () => {
         navigate('create_character')
     }
 
+    const handleStudioClick = () => {
+        navigate('studio')
+    }
 
     return(
         <>
@@ -27,6 +30,7 @@ const Home = () => {
         
         <CustomizedButton title="Create Freeform" color="white" backgroundColor="#ed1b64" hoverBackgroundColor="" onClick={handleFreeFormClick} />
         <CustomizedButton title="Create Character" color="white" backgroundColor="#ed1b64" hoverBackgroundColor="" onClick={handleCharacterClick} />
+        <CustomizedButton title="Studio" color="white" backgroundColor="#ed1b64" hoverBackgroundColor="" onClick={handleStudioClick} />
 
 
         </div>
