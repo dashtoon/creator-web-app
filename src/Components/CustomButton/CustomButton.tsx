@@ -7,7 +7,8 @@ interface IProps {
     backgroundColor: string;
     hoverBackgroundColor: string;
     title: string;
-    onClick: React.MouseEventHandler<HTMLButtonElement> 
+    onClick: React.MouseEventHandler<HTMLButtonElement> ;
+    className?: string;
 }
 
 
@@ -26,7 +27,7 @@ const CustomizedButton = (props: IProps) => {
       }));
   return (
     <>
-      <ColorButton onClick={e  => props.onClick(e)}  variant="contained">{props.title}</ColorButton>
+      <ColorButton className={props.className} onClick={e  => props.onClick(e)}  variant="contained">{props.title}</ColorButton>
       </>
   );
 }
