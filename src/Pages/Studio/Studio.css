@@ -1,3 +1,7 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
+
 .studio{
     padding:2% 5% 0 5%;
     height: 95vh;
@@ -19,7 +23,7 @@
 
 .action-button{
     margin-left: 5% !important;
-    margin-bottom: 0 !IMPORTANT;
+    margin-bottom: 0 !important;
     width: 20%;
     height: 100%;
     font-size: 1.5rem !important;
@@ -44,8 +48,9 @@
     margin: 3%;
     width: 50%;
     display: flex;
+    padding: 2%;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .image{
@@ -53,8 +58,9 @@
 }
 
 .img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    
+    
     object-fit: scale-down;
 }
 
@@ -76,4 +82,20 @@
     padding: 2px;
     border-radius: 10%;
     background: #f0ebeb;
+}
+
+.centeredDiv{
+    width: inherit;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.modal-button{
+  position: absolute !important;
+    bottom: 5%;
+    margin: 0 !important;
+    left: 45%;
 }

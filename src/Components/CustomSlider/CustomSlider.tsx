@@ -8,6 +8,7 @@ interface IProps {
     max: number;
     setValue: React.Dispatch<React.SetStateAction<number>>;
     name: string;
+    disabled: boolean;
 }
 const CustomSlider = (props: IProps) => {
 
@@ -23,6 +24,7 @@ const CustomSlider = (props: IProps) => {
             sx={{padding: '2% !important', width: '90%' }}
             key={props.name}
             aria-label="Width"
+            disabled={props.disabled}
             value={props.defaultValue}
             valueLabelDisplay="auto"
             step={props.step}
