@@ -17,7 +17,7 @@ const Home = () => {
     }
 
     const handleStudioClick = () => {
-        navigate('studio')
+        navigate('panel')
     }
 
     return(
